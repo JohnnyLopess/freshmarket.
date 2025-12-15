@@ -1,0 +1,5 @@
+node_modules
+dist
+.env
+.DS_Store
+frontend-dec-25.md
