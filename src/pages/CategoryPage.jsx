@@ -254,13 +254,12 @@ function CategoryPage() {
     setSortBy('recents')
     setViewMode('grid')
     setSelectedSubcategory('')
-    setSearchParams(prev => {
-      // Manter apenas o ID da categoria
-      const id = prev.get('id')
-      const newParams = new URLSearchParams()
-      if (id) newParams.set('id', id)
-      return newParams
-    })
+    const id = searchParams.get('id')
+    if (id) {
+      setSearchParams({ id })
+    } else {
+      setSearchParams({})
+    }
   }
   
   const handleSubcategoryChange = (subcatId) => {
