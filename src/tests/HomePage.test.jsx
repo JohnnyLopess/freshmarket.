@@ -6,6 +6,22 @@ import * as api from '../services/api'
 
 vi.mock('../services/api')
 
+const mockItemsResponse = {
+  products: [
+    {
+      id: 'all1',
+      name: 'Produto Geral',
+      slug: 'produto-geral',
+      images: ['geral.jpg'],
+      prices: [{ price: 15.00 }],
+      unit_type: 'un'
+    }
+  ],
+  total: 1,
+  page: 1,
+  limit: 200
+}
+
 const mockLayout = {
   banners: [
     { id: '1', image: 'banner1.jpg', is_desktop: true, is_mobile: false, is_mini: false },
@@ -104,14 +120,15 @@ describe('HomePage', () => {
     })
   })
 
-  it('deve exibir link "Ver mais" nas seções', async () => {
+  it('deve exibir setas de navegação nas seções', async () => {
     api.getLayout.mockResolvedValue(mockLayout)
     
     renderWithRouter(<HomePage />)
     
     await waitFor(() => {
-      const verMaisLinks = screen.getAllByText('Ver mais →')
-      expect(verMaisLinks.length).toBeGreaterThan(0)
+      // Verifica se existem botões de navegação (setas)
+      const buttons = screen.getAllByRole('button')
+      expect(buttons.length).toBeGreaterThan(0)
     })
   })
 

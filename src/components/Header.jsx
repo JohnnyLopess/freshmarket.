@@ -26,8 +26,8 @@ function Header() {
       if (searchQuery.trim().length >= 2) {
         setLoading(true)
         try {
-          const data = await searchProducts(searchQuery)
-          setResults(data.slice(0, 6))
+          const data = await searchProducts(searchQuery, 1, 6)
+          setResults(data.products || [])
           setShowResults(true)
         } catch {
           setResults([])
