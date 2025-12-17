@@ -2,7 +2,7 @@
 
 Projeto desenvolvido para o processo seletivo de Desenvolvedor Front-End (Estágio) da **Instabuy**.
 
-🔗 **Demo:** [https://freshmarket-6ubxguapm-johnnylopis-5795s-projects.vercel.app/](https://freshmarket-6ubxguapm-johnnylopis-5795s-projects.vercel.app/)
+🔗 **Deploy:** [https://freshmarket-nine.vercel.app/](https://freshmarket-nine.vercel.app/)
 
 ## 📋 Sobre o Projeto
 
