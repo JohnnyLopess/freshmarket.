@@ -20,10 +20,10 @@ E-commerce de supermercado com duas telas principais:
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/JohnnyLopess/freshmarket.git
-cd freshmarket
+git clone https://github.com/JohnnyLopess/freshmarket..git
+cd freshmarket.
 
-# Desenvolvimento (com hot reload)
+# Desenvolvimento
 make dev
 # Acesse: http://localhost:3000
 
@@ -103,38 +103,14 @@ src/
 
 ## ✨ Funcionalidades Extras
 
-### HomePage
-- Banners responsivos com versões desktop e mobile
-- Carrossel de banners com navegação
-- Seção "Ofertas do dia" com produtos promocionais
-- Categorias com ícones personalizados
-- Cards com marca do produto
-- Mini-seletor de quantidade nos cards
-- Scroll horizontal com 2 cards visíveis no mobile
-- Badges de desconto (%) e oferta
-
-### ProductPage
-- Galeria de imagens com miniaturas clicáveis
-- Seletor de quantidade para produtos por unidade
-- Seletor de peso para produtos por kg (incremento 0.25kg)
-- Aviso sobre peso variável em produtos por kg
-- Cálculo de total baseado em quantidade/peso
-- Breadcrumb com botão voltar e ícone Home
-- Badges de desconto, oferta e indisponível
-- Mensagem padrão quando não há descrição
-
 ### Páginas Extras
 - **CategoryPage** - Listagem por categoria com filtros e ordenação
 - **SearchPage** - Busca de produtos
 
-### Componentes e Arquitetura
-- Hook `useProduct` para centralizar lógica de preços/badges/estoque
-- Componentes reutilizáveis (ProductCard, CategoryProductCard)
-- Footer com informações de contato
-- ScrollToTop ao navegar entre páginas
-- 66 testes automatizados
-- Docker para desenvolvimento e produção
-- CI/CD configurado
+### Arquitetura
+- Testes automatizados
+- Docker para desenvolvimento
+- CI/CD
 
 ## 📡 API
 
